@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
         @article.title = params[:title]
         @article.content = params[:content]
         @article.save
-        
+
     end
 
     get '/articles/:id' do
