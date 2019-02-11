@@ -1,7 +1,8 @@
 class ArticlesController < ApplicationController
 
     get '/articles' do
-        "I can see this!"
+            @articles = Article.all
+            erb :"articles/index"
     end
 
 end
