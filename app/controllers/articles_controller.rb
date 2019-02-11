@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
     end
 
         get '/articles/:id' do
-            @article = Article.all(params[:id])
+            @article = Article.find(params[:id])
             erb :show
         end
 
