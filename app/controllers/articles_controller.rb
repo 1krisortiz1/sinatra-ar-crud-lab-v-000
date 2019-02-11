@@ -28,4 +28,8 @@ class ArticlesController < ApplicationController
          erb :"articles/edit"
     end
 
+    patch '/articles/:id' do
+        raise params.inspect
+    end
+
 end
