@@ -37,4 +37,8 @@ class ArticlesController < ApplicationController
         redirect "/articles/#{@article.id}"
     end
 
+    delete '/articles/:id' do
+        raise "YOU ARE ABOUT TO DELETE #{params[:id]}"
+    end
+
 end

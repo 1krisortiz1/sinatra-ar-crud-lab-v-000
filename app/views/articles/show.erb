@@ -1,11 +1,4 @@
-<!-- Then, it should render the show.erb view page. That view should use ERB to render the @article's title and content.
-
-<form  action="/articles/<%= @article.id %>/delete" method="post">
-
-    <input id="hidden" type="hidden" name="_method" value="DELETE">
-    <input type="submit" value="delete">
-
-</form>
+<!-- Then, it should render the show.erb view page. That view should use ERB to render the @article's title and conte
 -->
 
 <h1><%= @article.title %></h1>
@@ -13,3 +6,9 @@
 <p><%= @article.content %></p>
 
 <p><a href="/articles/<%= @article.id %>/edit">Edit</a></p>
+
+<p>
+<form action="/articles/<%= @articles.id %>" method="post">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete Article">
+</p>
