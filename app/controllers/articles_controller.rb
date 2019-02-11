@@ -10,9 +10,6 @@ class ArticlesController < ApplicationController
     end
 
     post '/articles' do
-        #{"title"=>"Name of Article 1", "content"=>"Content for article 1."}
-        #@article = Articles.create(title: params[:title], content: params[:content])
-        #        redirect to '/articles'
         @article = Article.new
         @article.title = params[:title]
         @article.content = params[:content]
