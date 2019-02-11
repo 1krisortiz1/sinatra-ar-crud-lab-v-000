@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
     end
 
     post '/articles' do
-
+        raise params.inspect
     end
 
     get '/articles/:id' do
