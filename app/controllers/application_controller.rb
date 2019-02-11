@@ -11,8 +11,4 @@ class ApplicationController < Sinatra::Base
       get '/' do
       end
 
-#    get '/articles/:id/edit' do
-#        @article = Article.all(params[:id])
-#         erb :edit
-#    end
 end
