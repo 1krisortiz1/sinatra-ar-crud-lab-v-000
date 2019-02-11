@@ -7,7 +7,6 @@ class ArticlesController < ApplicationController
 
     get '/articles/new' do
         "Does this load?"
-
         #erb :new
     end
 
