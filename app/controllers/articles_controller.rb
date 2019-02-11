@@ -5,4 +5,9 @@ class ArticlesController < ApplicationController
             erb :"articles/index"
     end
 
+        get '/articles/:id' do
+            @article = Article.all(params[:id])
+            erb :show
+        end
+
 end
