@@ -10,7 +10,6 @@ class ArticlesController < ApplicationController
     end
 
     post '/articles' do
-        raise params.inspect
         #{"title"=>"Name of Article 1", "content"=>"Content for article 1."}
         #@article = Articles.create(title: params[:title], content: params[:content])
         #        redirect to '/articles'
@@ -19,6 +18,7 @@ class ArticlesController < ApplicationController
         @article.content = params[:content]
         @article.save
 
+        redirect "/articles/#{@article.id}"
     end
 
     get '/articles/:id' do
