@@ -5,15 +5,16 @@ class ArticlesController < ApplicationController
             erb :"articles/index"
     end
 
-        get '/articles/:id' do
-            @article = Article.find(params[:id])
-            erb :"articles/show"
-        end
 
-            get '/articles/new' do
-                "Does this load?"
+    get '/articles/new' do
+        "Does this load?"
 
-                #erb :new
-            end
+        #erb :new
+    end
+    
+    get '/articles/:id' do
+        @article = Article.find(params[:id])
+        erb :"articles/show"
+    end
 
 end
