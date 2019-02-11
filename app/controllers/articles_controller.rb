@@ -29,7 +29,12 @@ class ArticlesController < ApplicationController
     end
 
     patch '/articles/:id' do
-        raise params.inspect
+        @article = Article.find(params[:id])
+        @article.title = params[:title]
+        @article.content = params[:content]
+        @article.save
+
+        redirect "/articles/#{@article.id}"
     end
 
 end
