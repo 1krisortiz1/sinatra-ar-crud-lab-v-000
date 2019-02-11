@@ -23,10 +23,7 @@ class ApplicationController < Sinatra::Base
 
 #
 
-#    get '/articles/:id' do
-#        @article = Article.all(params[:id])
-#        erb :show
-#    end
+
 
 #    get '/articles/:id/edit' do
 #        @article = Article.all(params[:id])
