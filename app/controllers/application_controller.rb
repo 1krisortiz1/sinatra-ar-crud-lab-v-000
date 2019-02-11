@@ -11,10 +11,10 @@ class ApplicationController < Sinatra::Base
       get '/' do
       end
 
-#    
+#
 #        @articles = Articles.create(title: params[:title], content: params[:content])
 #        redirect to '/articles'
-#    
+#
 
 #    get '/articles/:id/edit' do
 #        @article = Article.all(params[:id])
