@@ -10,4 +10,10 @@ class ArticlesController < ApplicationController
             erb :"articles/show"
         end
 
+            get '/articles/new' do
+                "Does this load?"
+                
+                #erb :new
+            end
+
 end
