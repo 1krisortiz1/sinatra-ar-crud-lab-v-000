@@ -9,6 +9,10 @@ class ArticlesController < ApplicationController
         erb :"articles/new"
     end
 
+    post '/articles' do
+
+    end
+
     get '/articles/:id' do
         @article = Article.find(params[:id])
         erb :"articles/show"
