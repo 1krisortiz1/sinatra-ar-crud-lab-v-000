@@ -1,4 +1,4 @@
-class ArticleController < ApplicationController
+class ArticlesController < ApplicationController
 
     get '/articles/' do
         " I can see this!"
