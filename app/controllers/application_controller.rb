@@ -11,7 +11,6 @@ class ApplicationController < Sinatra::Base
       get '/' do
       end
 
-
 #    get '/articles/new' do
 #        erb :new
 #    end
@@ -20,10 +19,6 @@ class ApplicationController < Sinatra::Base
 #        @articles = Articles.create(title: params[:title], content: params[:content])
 #        redirect to '/articles'
 #    end
-
-#
-
-
 
 #    get '/articles/:id/edit' do
 #        @article = Article.all(params[:id])
