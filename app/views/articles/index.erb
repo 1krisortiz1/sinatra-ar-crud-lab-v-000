@@ -5,7 +5,7 @@ render them on the page. -->
 <ol>
     <% @articles.each do |article| %>
         <li>
-            <a href="/posts/<%= post.id %>">
+            <a href="/articles/<%= article.id %>">
                 <%= article.title %>
             </a>
             <p><%= article.content %></p>
