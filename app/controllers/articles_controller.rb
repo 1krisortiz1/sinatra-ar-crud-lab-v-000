@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
         @article.content = params[:content]
         @article.save
 
-        redirect '/articles/#{@article.id}'
+        redirect "/articles/#{@article.id}"
     end
 
     get '/articles/:id' do
