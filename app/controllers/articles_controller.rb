@@ -1,6 +1,6 @@
 class ArticleController < ApplicationController
 
-    get '/songs/' do
+    get '/articles/' do
         " I can see this!"
     end
 
