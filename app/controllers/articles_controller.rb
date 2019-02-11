@@ -24,8 +24,8 @@ class ArticlesController < ApplicationController
     end
 
     get '/articles/:id/edit' do
-        @article = Article.all(params[:id])
-         erb :edit
+        @article = Article.find(params[:id])
+         erb :"articles/edit"
     end
 
 end
