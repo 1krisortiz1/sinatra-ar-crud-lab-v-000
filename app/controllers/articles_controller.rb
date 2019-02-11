@@ -6,8 +6,7 @@ class ArticlesController < ApplicationController
     end
 
     get '/articles/new' do
-        "Does this load?"
-        #erb :new
+        erb :"articles/new"
     end
 
     get '/articles/:id' do
